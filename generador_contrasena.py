@@ -13,11 +13,11 @@ def generar_contrasena():
         caracter_random = random.choice(caracteres) #la opcion choice elige un caracter de la lista
         contrasena.append(caracter_random)          #luego agrega a la lista el caracter elegido
        
-    # contrasena = "".join(contrasena)                 #convierte la lista en string
+    # contrasena = "".join(contrasena)                
     # return contrasena
     
-    l  = "".join(map(str,contrasena))
-    return l
+    contrasena  = "".join(map(str,contrasena))       #convierte la lista en string  string.join conecta elementos dentro de la lista de cadenas, no ints.
+    return contrasena
     
 
 
